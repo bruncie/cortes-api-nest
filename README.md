@@ -97,3 +97,20 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](https://github.com/nestjs/nest/blob/master/LICENSE).
+
+- Curl: curl --request POST \
+  --url http://localhost:3000/video/cut \
+  --header 'Content-Type: application/json' \
+  --data '{
+     "url": "https://www.youtube.com/watch?v=qTUSYC0Cxs8",
+     "clips": [
+       {
+         "startTime": 10,
+         "endTime": 20
+       },
+       {
+         "startTime": 40,
+         "endTime": 50
+       }
+     ]
+   }'
